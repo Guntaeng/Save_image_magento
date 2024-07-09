@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-07-09T13:19:13.024746" rpa="false" schemaversion="5">
+<suite id="s1" name="Save Imgae" source="c:\Automate_WEB\Save_image\testcases\save_imgae.robot">
+<test id="s1-t1" name="Save image magento" line="8">
+<kw name="Save image">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-09T13:19:13.290460" level="INFO">Opening browser 'chrome' to base url 'https://www.dohome.co.th/pub/media/catalog/product/1/0/10000026_ea_1200_1.jpg'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-09T13:19:13.290460" elapsed="1.721829"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-07-09T13:19:15.370192" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-07-09T13:19:15.013289" elapsed="0.357908"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-09T13:19:15.416040" level="INFO">Element 'xpath=//*[@src="https://www.dohome.co.th/pub/media/catalog/product/1/0/10000026_ea_1200_1.jpg"]' is displayed.</msg>
+<arg>xpath=//*[@src="${url}"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-09T13:19:15.371197" elapsed="0.044843"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-07-09T13:19:15.791518" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="pictures/10000026_EA%281%29.png"&gt;&lt;img src="pictures/10000026_EA%281%29.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>xpath=//*[@src="${url}"]</arg>
+<arg>filename=C:\\Automate_WEB\\Save_image\\pictures\\${sku}_${unit}(${order_by}).png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-07-09T13:19:15.417036" elapsed="0.375482"/>
+</kw>
+<arg>sku=10000026</arg>
+<arg>url=https://www.dohome.co.th/pub/media/catalog/product/1/0/10000026_ea_1200_1.jpg</arg>
+<arg>unit=EA</arg>
+<arg>order_by=1</arg>
+<status status="PASS" start="2024-07-09T13:19:13.289451" elapsed="2.503067"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-09T13:19:15.793520" elapsed="2.257293"/>
+</kw>
+<status status="PASS" start="2024-07-09T13:19:13.287933" elapsed="4.763830"/>
+</test>
+<test id="s1-t2" name="Save image magento" line="8">
+<kw name="Save image">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-09T13:19:18.055763" level="INFO">Opening browser 'chrome' to base url 'https://www.dohome.co.th/pub/media/catalog/product/1/0/10000027_bk_1200_1.jpg'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-09T13:19:18.054852" elapsed="1.898635"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-07-09T13:19:20.224805" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-07-09T13:19:19.953487" elapsed="0.271318"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-09T13:19:20.259225" level="INFO">Element 'xpath=//*[@src="https://www.dohome.co.th/pub/media/catalog/product/1/0/10000027_bk_1200_1.jpg"]' is displayed.</msg>
+<arg>xpath=//*[@src="${url}"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-09T13:19:20.225808" elapsed="0.033417"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-07-09T13:19:20.575589" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="pictures/10000027_BK%281%29.png"&gt;&lt;img src="pictures/10000027_BK%281%29.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>xpath=//*[@src="${url}"]</arg>
+<arg>filename=C:\\Automate_WEB\\Save_image\\pictures\\${sku}_${unit}(${order_by}).png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-07-09T13:19:20.260310" elapsed="0.315279"/>
+</kw>
+<arg>sku=10000027</arg>
+<arg>url=https://www.dohome.co.th/pub/media/catalog/product/1/0/10000027_bk_1200_1.jpg</arg>
+<arg>unit=BK</arg>
+<arg>order_by=1</arg>
+<status status="PASS" start="2024-07-09T13:19:18.054852" elapsed="2.521734"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-09T13:19:20.577585" elapsed="2.150041"/>
+</kw>
+<status status="PASS" start="2024-07-09T13:19:18.053762" elapsed="4.673864"/>
+</test>
+<test id="s1-t3" name="Save image magento" line="8">
+<kw name="Save image">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-09T13:19:22.731650" level="INFO">Opening browser 'chrome' to base url 'https://www.dohome.co.th/pub/media/catalog/product/1/0/10000027_bk_1200_1_1.jpg'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-09T13:19:22.731650" elapsed="1.890949"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-07-09T13:19:24.873825" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-07-09T13:19:24.623602" elapsed="0.251221"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-09T13:19:24.908364" level="INFO">Element 'xpath=//*[@src="https://www.dohome.co.th/pub/media/catalog/product/1/0/10000027_bk_1200_1_1.jpg"]' is displayed.</msg>
+<arg>xpath=//*[@src="${url}"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-09T13:19:24.874823" elapsed="0.033541"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-07-09T13:19:25.148056" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="pictures/10000027_BK%282%29.png"&gt;&lt;img src="pictures/10000027_BK%282%29.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>xpath=//*[@src="${url}"]</arg>
+<arg>filename=C:\\Automate_WEB\\Save_image\\pictures\\${sku}_${unit}(${order_by}).png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-07-09T13:19:24.909452" elapsed="0.238604"/>
+</kw>
+<arg>sku=10000027</arg>
+<arg>url=https://www.dohome.co.th/pub/media/catalog/product/1/0/10000027_bk_1200_1_1.jpg</arg>
+<arg>unit=BK</arg>
+<arg>order_by=2</arg>
+<status status="PASS" start="2024-07-09T13:19:22.730650" elapsed="2.417406"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-09T13:19:25.149559" elapsed="2.139846"/>
+</kw>
+<status status="PASS" start="2024-07-09T13:19:22.729583" elapsed="4.559822"/>
+</test>
+<status status="PASS" start="2024-07-09T13:19:13.032262" elapsed="14.259146"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Save Imgae">Save Imgae</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-07-09T13:19:18.052769" level="WARN">Multiple tests with name 'Save image magento' executed in suite 'Save Imgae'.</msg>
+<msg time="2024-07-09T13:19:22.729583" level="WARN">Multiple tests with name 'Save image magento' executed in suite 'Save Imgae'.</msg>
+</errors>
+</robot>
