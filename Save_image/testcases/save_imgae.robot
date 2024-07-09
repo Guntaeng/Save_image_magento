@@ -5,12 +5,12 @@ Test Template     Save image
 Test Teardown    Close Browser       
 
 *** Test Cases ***
-Save image magento    ${sku}    ${image}    ${unit}    ${order_by} 
+Save image magento v.1    ${sku}    ${image}    ${unit}    ${order_by} 
     
     
 
 *** Keywords ***
-Save image
+Save image 
     [Arguments]    ${sku}    ${url}    ${unit}    ${order_by}
     Open Browser    ${url}    headlesschrome
     Capture Page Screenshot    
