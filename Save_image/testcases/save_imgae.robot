@@ -12,7 +12,7 @@ Save image magento    ${sku}    ${image}    ${unit}    ${order_by}
 *** Keywords ***
 Save image
     [Arguments]    ${sku}    ${url}    ${unit}    ${order_by}
-    Open Browser    ${url}    chrome
+    Open Browser    ${url}    headlesschrome
     Capture Page Screenshot    
     Element Should Be Visible    xpath=//*[@src="${url}"]    
     Capture Element Screenshot    xpath=//*[@src="${url}"]    filename=C:\\Automate_WEB\\Save_image\\pictures\\${sku}_${unit}(${order_by}).png
