@@ -5,7 +5,7 @@ Test Template     Save image
 Test Teardown    Close Browser       
 
 *** Test Cases ***
-Save image magento    ${sku}    ${image}    ${unit}    ${order_by} 
+Save image magento v1   ${sku}    ${image}    ${unit}    ${order_by} 
     
     
 
